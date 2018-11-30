@@ -11,9 +11,9 @@ SC_MODULE(toplevel)
 
     SC_CTOR(toplevel) : n1("n1")
     {
-        n1.A(A);
-        n1.B(B);
-        n1.Z(Z);
+        n1.A.bind(A);
+        n1.B.bind(B);
+        n1.Z.bind(Z);
 
         SC_METHOD(process);
         sensitive << A << B << Z;
@@ -39,6 +39,7 @@ SC_MODULE(toplevel)
 
 int sc_main(int argc, char* argv[])
 {
-    toplevel("toplevel");
+    toplevel toplevel("toplevel");
     sc_start();
+    return 0;
 }

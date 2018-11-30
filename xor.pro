@@ -3,7 +3,11 @@ CONFIG += console
 CONFIG -= app_bundle
 CONFIG -= qt
 
-SOURCES += main.cpp
+# Remember only one sc_main() function should exist.
+# Choose "nand.cpp" here to test your NAND implementation.
+# Choose "main.cpp" here to test your XOR implementation.
+#SOURCES += main.cpp
+SOURCES += nand.cpp
 
 QMAKE_CXXFLAGS += -std=c++0x
 
