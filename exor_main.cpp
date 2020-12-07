@@ -1,9 +1,10 @@
-#include "systemc.h"
+#include <systemc.h>
+
 #include "stim.h"
 #include "exor.h"
 #include "mon.h"
 
-int sc_main(int argc, char* argv[])
+int sc_main(int, char**)
 {
     sc_signal<bool> sigA, sigB, sigZ;
 
@@ -24,5 +25,4 @@ int sc_main(int argc, char* argv[])
     sc_start();  // run forever
 
     return 0;
-
 }
