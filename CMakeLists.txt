@@ -1,7 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 
 project(Exercise2)
-set (CMAKE_CXX_STANDARD 11)
 
 # Remember only one sc_main() function should exist.
 # Choose "nand_main.cpp" here to test your NAND implementation.
